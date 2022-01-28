@@ -1,4 +1,8 @@
-django-admin startproject 'projectname'
+poetry init
+poetry shell
+git init
+poetry add django black
+django-admin startproject 'projectname' (try django-admin startproject eventplus .)
 py manage.py makemigrations --dry-run --verbosity 3
 py manage.py migrate
 py manage.py runserver
@@ -9,5 +13,5 @@ pip install coverage
 coverage run --omit='*/venv/*' manage.py test
 coverage run --omit='*/poetry.lock/*' manage.py test
 coverage html
-pip install djangorestframework
+pip install djangorestframework/ poetry add djangorestframework # i used poetry as my virtual environment, so i will always ask poetry to add instead of asking pip to install
 
