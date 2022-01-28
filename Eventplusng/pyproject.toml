@@ -8,6 +8,7 @@ authors = ["y"]
 python = "^3.8"
 Django = "^4.0.1"
 black = "^21.12b0"
+djangorestframework = "^3.13.1"
 
 [tool.poetry.dev-dependencies]
 

@@ -3,6 +3,7 @@ py manage.py makemigrations --dry-run --verbosity 3
 py manage.py migrate
 py manage.py runserver
 py manage.py createsuperuser
+py manage.py createsuperuser --username
 py manage.py startapp 'appname'
 pip install coverage
 coverage run --omit='*/venv/*' manage.py test
